@@ -44,7 +44,7 @@ export default {
     voiceMode (text, status) {
       console.log(text, status)
       if (text.search('play') > -1) {
-        // store.commit('addText', text)
+        store.commit('addText', text)
         console.log('to play the game')
         router.push({ path: '/goto' })
       }

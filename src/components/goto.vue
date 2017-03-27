@@ -1,14 +1,20 @@
 <template>
 <div>
-  Go To
+  {{ store.state.text }}
 </div>
 </template>
 
 <script>
+import store from '../vuex/store'
 export default {
-  name: 'goto'
+  name: 'goto',
+  data () {
+    return {
+      store
+    }
+  }
 }
 </script>
 
-<style lang="css">
+<style>
 </style>
